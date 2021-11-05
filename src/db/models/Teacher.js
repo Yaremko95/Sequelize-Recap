@@ -21,6 +21,10 @@ const Teacher = await sequelize.define("teachers", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  image: {
+    type: DataTypes.STRING,
+    defaultValue: "http://default.image",
+  },
 });
 
 export default Teacher;

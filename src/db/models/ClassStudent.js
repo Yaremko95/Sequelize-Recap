@@ -5,7 +5,7 @@ const { DataTypes } = s;
 
 const ClassStudent = sequelize.define("classStudent", {
   id: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },

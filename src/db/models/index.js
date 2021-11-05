@@ -21,4 +21,9 @@ Student.belongsToMany(Class, {
 Teacher.hasMany(Class);
 Class.belongsTo(Teacher);
 
+// Module-Class
+
+Module.hasMany(Class);
+Class.belongsTo(Module);
+
 export default { Class, Module, Student, Teacher };
